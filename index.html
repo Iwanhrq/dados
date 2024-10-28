@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/jpg" href="./img/logo-ods.png" /> <!-- referente ícone de pagina -->
+    <!--Link Icones-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Site Desafio dos Dados</title>
+</head>
+
+<body>
+    <main>
+
+
+        <!--troquei o HEADER por NAV-->
+        <nav class="navbar">
+            <div class="logos-content">
+                <a href="#"><img src="./img/un-logo.svg"></a>
+                <a href="#"><img src="./img/un-logo-text.svg"></a>
+            </div>
+
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#container-ods">ODS</a></li>
+                <li><a href="">Botão</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!--header para o título da pagina-->
+        <header>
+            <h1>Error 504 - ODS</h1>
+        </header>
+
+
+
+        <section id="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+
+                <div class="slide-box primeiro">
+                    <img class="image-web" src="./img/slider/onu_wallpaper1.svg" alt="slide 1">
+                    <img class="image-mobile" src="./img/slider/onu_wallpaper1.svg" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="image-web" src="./img/slider/onu_wallpaper2.svg" alt="slide 2">
+                    <img class="image-mobile" src="./img/slider/onu_wallpaper2.svg" alt="slide 2">
+                </div>
+
+                <div class="slide-box">
+                    <img class="image-web" src="./img/slider/onu_wallpaper3.svg" alt="slide 3">
+                    <img class="image-mobile" src="./img/slider/onu_wallpaper3.svg" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="sobre">
+            <div class="texto-imagem">
+                <div class="imagem">
+                    <img src="img/logo-ods.png" alt="Imagem ilustrativa da ODS">
+                </div>
+                <div class="texto">
+                    <h1>O que são os 17 Objetivos de Desenvolvimento Sustentável</h1>
+                    <p>
+                        Os 17 Objetivos de Desenvolvimento Sustentável são uma agenda global criada pela Organização das
+                        Nações Unidas (ONU)
+                        em 2015, como parte da Agenda 2030 para o Desenvolvimento Sustentável. Eles têm o objetivo de
+                        erradicar a pobreza,
+                        proteger o planeta e garantir que todas as pessoas tenham paz e prosperidade até 2030. cada ODS
+                        inclui metas específicas
+                        para orientar os países em seu desenvolvimento econômico, social e ambiental de forma
+                        equilibrada.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="container-ods">
+
+            <!-- Ods 1-->
+            <div class="grid-container">
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-1.svg" alt="ODS 1">
+                        <div class="overlay">
+                            <p>ODS 1</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-1')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-1" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-1')">&times;</span>
+                            <p>O Objetivo 1 visa acabar com a pobreza em todas as suas formas, em todos os lugares,
+                                fundamental para garantir uma vida digna a todos os indivíduos.</p><br>
+                            <p>A desigualdade econômica e social é um dos principais fatores que perpetuam a pobreza,
+                                que
+                                ainda afeta milhões de pessoas em todo o mundo, limitando seu acesso a necessidades
+                                básicas
+                                como alimentação, água potável, saúde e educação.</p><br>
+                            <p>Para superar e erradicar a pobreza, o Objetivo 1 propõe políticas que promovam o emprego
+                                e a
+                                inclusão social, bem como o acesso a serviços básicos, e reduzir a exposição e
+                                vulnerabilidade destes a desastres econômicos, sociais e ambientais.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-2.svg" alt="ODS 2">
+                        <div class="overlay">
+                            <p>ODS 2</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-2')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-2" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-2')">&times;</span>
+                            <p>O Objetivo 2 visa acabar com a fome, alcançar a segurança alimentar e promover a
+                                agricultura
+                                sustentável.</p><br>
+                            <p>A fome, assim como a pobreza, é uma realidade que afeta milhões de pessoas, e a pandemia
+                                e as
+                                mudanças climáticas apenas agravaram essa situação.</p><br>
+                            <p>Para resolver esse problema, a ODS 2 propõe que as nações devem aumentar a produção
+                                agrícola
+                                de forma sustentável, investindo em tecnologias inovadoras, para garantir que todos
+                                tenham
+                                acesso a alimentos nutritivos e suficientes. Além disso, essa ODS também procura
+                                promover
+                                políticas que apoiem os pequenos agricultores e agricultores familiares, que desempenham
+                                papel fundamental na segurança alimentar, principalmente em países em desenvolvimento.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-3.svg" alt="ODS 3">
+                        <div class="overlay">
+                            <p>ODS 3</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-3')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-3" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-3')">&times;</span>
+                            <p>O Objetivo 3 busca promover o bem-estar para todos em todas as idades, além de assegurar
+                                uma vida longa e saudável para cada individuo.
+                            </p><br>
+                            <p>Embora a saúde seja um direito humano fundamental, milhões de pessoas não tem acesso a
+                                serviços de saúde de qualidade.
+                            </p><br>
+                            <p>A colaboração internacional é essencial para enfrentar esse problema, com investimentos
+                                em infraestrutura de saúde, formação de profissionais e acesso a medicamentos são
+                                cruciais para alcançar esse objetivo. Além disso, campanhas de conscientização e
+                                programas de prevenção podem ajudar no combate de doenças não transmissíveis, como
+                                diabetes e doenças cardíacas, e melhorar a qualidade de vida das pessoas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-4.svg" alt="ODS 4">
+                        <div class="overlay">
+                            <p>ODS 4</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-4')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-4" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-4')">&times;</span>
+                            <p>A ODS 4 visa garantir a educação inclusiva, equitativa e de qualidade para todos,
+                                proporcionando
+                                oportunidades de aprendizagem e trabalho ao longo da vida.
+                            </p><br>
+                            <p>A educação é a base para o desenvolvimento pessoal e social, e a sua ausência perpetua
+                                ciclos de pobreza e desigualdade.
+                                Além da educação básica, é importante investir na aprendizagem técnica e profissional,
+                                preparando os indivíduos para o mercado de trabalho,
+                                contribuindo para o desenvolvimento econômico e social.
+                            </p><br>
+                            <p>Para garantir que todos tenham acesso a educação de qualidade, é necessário investir em
+                                infraestrutura escolar, formação de professores e recursos educacionais, e promover a
+                                igualdade e inclusão de gênero e social. Além disso, programas de educação continua
+                                também devem ser implementados, permitindo que as pessoas se adaptem as mudanças nas
+                                demandadas do mercado de trabalho.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-5.svg" alt="ODS 5">
+                        <div class="overlay">
+                            <p>ODS 5</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-5')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-5" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-5')">&times;</span>
+                            <p>A ODS 5 busca alcançar a igualdade de gênero e empoderar todas as meninas e mulheres,
+                                objetivo é fundamental para o desenvolvimento sustentável.
+                            </p><br>
+                            <p>A desigualdade de gênero é uma questão global que afeta diversos aspectos da vida, como o
+                                acesso a educação, saúde, emprego e participação poitica.
+                            </p><br>
+                            <p>Além de promover maior inclusão das mulheres na sociedade e apoiar iniciativas que
+                                incentivem o empreendedorismo feminino, a erradicação da violência de gênero é uma
+                                prioridade nesse ODS.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-6.svg" alt="ODS 6">
+                        <div class="overlay">
+                            <p>ODS 6</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-6')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-6" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-6')">&times;</span>
+                            <p>O Objetivo 6 visa garantir a disponibilidade e a gestão sustentável da agua e do
+                                saneamento para todos. Embora um recurso vital para a vida, bilhões de pessoas ainda
+                                carecem de acesso a água potável e serviços de saneamento adequados.
+                            </p><br>
+                            <p>As mudanças climáticas e a degradação ambiental também impactam na disponibilidade de
+                                água. Desta forma, é fundamental adotar medidas de conservação e proteção de fontes
+                                hídricas, além de promover a recuperação de ecossistemas.
+                            </p><br>
+                            <p>A implementação de sistemas de gestão que promovam o uso responsável e sustentável dos
+                                recursos hídricos, assim como investimento em infraestrutura de saneamento para reduzir
+                                doenças, melhorar a qualidade de vida e promover a dignidade, é igualmente crucial para
+                                a saúde publica e desenvolvimento social, previstas nesse ODS.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-7.svg" alt="ODS 7">
+                        <div class="overlay">
+                            <p>ODS 7</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-7')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-7" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-7')">&times;</span>
+                            <p>O Objetivo 7 busca garantir o acesso a energia acessível, confiável, sustentável e
+                                moderna para todos. A energia é um fator essencial para o desenvolvimento econômico e
+                                social, mas milhões de pessoas ainda vivem sem eletricidade.
+                            </p><br>
+                            <p>As fontes de energia renováveis, como solar, eólica e hidroelétrica, oferecem uma
+                                alternativa viável às energias fósseis, contribuindo para a redução das emissões de
+                                carbono e mitigação do aquecimento global e das mudanças climáticas.
+                            </p><br>
+                            <p>Para alcançar esse objetivo, é necessário investir em infraestrutura e promover
+                                tecnologias renováveis que possam beneficiar comunidades de forma sustentável. É crucial
+                                que as políticas energéticas considerem as necessidades das comunidades vulneráveis e
+                                promovam soluções acessíveis, focando também na sustentabilidade.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-8.svg" alt="ODS 8">
+                        <div class="overlay">
+                            <p>ODS 8</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-8')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-8" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-8')">&times;</span>
+                            <p>O ODS 8 visa promover o crescimento econômico inclusivo e sustentável, o emprego pleno e
+                                produtivo e o trabalho decente para todos, que também está previsto nos direitos
+                                humanos.
+                            </p><br>
+                            <p>O crescimento econômico deve estar alinhado com a sustentabilidade ambiental. Promover
+                                práticas responsáveis e inovadoras que respeitem o meio ambiente em empresas pode
+                                resultar em um crescimento mais sustentável. Além disso, o incentivo a pequenas e médias
+                                empresas é essencial para diversificar a economia e gerar empregos locais.
+                            <p>A inclusão no mercado de trabalho, especialmente para grupos marginalizados, é
+                                fundamental também. Políticas que promovam a igualdade de oportunidades e a eliminação
+                                de discriminações no ambiente de trabalho podem garantir que todos tenham acesso a um
+                                emprego digno.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-9.svg" alt="ODS 9">
+                        <div class="overlay">
+                            <p>ODS 9</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-9')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-9" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-9')">&times;</span>
+                            <p>O Objetivo 9 visa construir infra estruturas resilientes, promover a industrialização
+                                inclusiva e sustentável e fomentar a inovação.
+                            </p><br>
+                            <p>O desenvolvimento de infraestrutura é fundamental para o crescimento econômico e a
+                                melhoria da qualidade de vida. Por exemplo, investimentos em transporte, tecnologia da
+                                informação e comunicação, e infraestrutura energética podem transformar comunidades e
+                                impulsionar o desenvolvimento regional.
+                            </p><br>
+                            <p>A industrialização sustentável, estratégia proposta neste ODS, é essencial para gerar
+                                empregos e instigar o crescimento econômico. É importante promover a criação e adoção de
+                                tecnologias limpas e práticas de produção responsável que minimizem o impacto ambiental.
+                                Além disso, o suporte a pequenos empreendedores locais pode estimular a inovação e o
+                                desenvolvimento econômico inclusivo. </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-10.svg" alt="ODS 10">
+                        <div class="overlay">
+                            <p>ODS 10</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-10')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-7" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-10')">&times;</span>
+                            <p>O Objetivo 10 busca reduzir as desigualdades dentro e entre os países. A desigualdade
+                                social e econômica representa uma barreira significativa ao desenvolvimento sustentável,
+                                prejudicando a unidade social e a estabilidade política.
+                            </p><br>
+                            <p>Para enfrentar essa questão, é fundamental implementar políticas que promovam a inclusão
+                                social, garantindo que todos tenham acesso a oportunidades equitativas. Isso está
+                                atrelado à promoção de capacitação e acesso a recursos para grupos marginalizados para
+                                que possa ajudá-los a superar barreiras estruturais.
+                            </p><br>
+                            <p>A colaboração internacional é necessária para abordar as desigualdades globais. O apoio a
+                                países em desenvolvimento por meio de investimento, comércio justo e transferência de
+                                tecnologia pode ajudar a criar um ambiente mais equitativo, promovendo justiça social e
+                                combatendo a discriminação.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-11.svg" alt="ODS 11">
+                        <div class="overlay">
+                            <p>ODS 11</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-11')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-11" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-11')">&times;</span>
+                            <p>O ODS 11 visa tornar as cidades e comunidades mais inclusivas, seguras, resilientes e
+                                sustentáveis. À medida que a urbanização avança, é essencial garantir que o crescimento
+                                urbano seja bem planejado para evitar favelas, poluição e congestionamento, problemas
+                                recorrentes principalmente em países em desenvolvimento.
+                            </p><br>
+                            <p>O investimento em infraestrutura urbana de qualidade e sustentável contribui para a
+                                melhoria da qualidade de vida e a redução do impacto ambiental, fundamental para
+                                construir cidades que sejam inclusivas e capazes de enfrentar as mudanças climáticas.
+                                Além disso, este ODS destaca a importância de promover habitações adequadas e acessíveis
+                                para proporcionar uma vida digna e ajudar a reduzir as desigualdades sociais.
+                            </p><br>
+                            <p>A resiliência urbana também é um foco importante do ODS 11, especialmente em regiões
+                                vulneráveis a desastres naturais e mudanças climáticas. É essencial planejar e adaptar
+                                as cidades para resistir a esses desafios, por meio de uma infraestrutura adequada.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-12.svg" alt="ODS 12">
+                        <div class="overlay">
+                            <p>ODS 12</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-12')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-12" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-12')">&times;</span>
+                            <p>O Objetivo 12 incentiva o uso sustentável dos recursos naturais e promove padrões de
+                                consumo e produção responsáveis. O uso excessivo e insustentável de recursos resulta em
+                                esgotamento ambiental, afetando negativamente os ecossistemas e a biodiversidade.
+                            </p><br>
+                            <p>A mudança para um consumo consciente é vital para a sustentabilidade. Educar os
+                                consumidores sobre os impactos ambientais e sociais de seus hábitos pode ajudar a
+                                reduzir a demanda por produtos não sustentáveis, e incentivar empresas a adotar práticas
+                                de produção responsável, como reduzir o uso de produtos químicos perigosos e minimizar
+                                emissões, contribui para a preservação do meio ambiente.
+                            </p><br>
+                            <p>Para alcançar o ODS 12, não só o governo e as empresas, mas também a população geral
+                                precisam trabalhar juntos. Estabelecer regras claras e objetivas, promover práticas de
+                                sustentabilidade corporativa e engajar consumidores são passos fundamentais para reduzir
+                                os impactos ambientais e criar uma economia mais justa e equilibrada.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-13.svg" alt="ODS 13">
+                        <div class="overlay">
+                            <p>ODS 13</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-13')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-13" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-13')">&times;</span>
+                            <p>O Objetivo 13 busca tomar ações urgentes para combater a mudança climática e seus
+                                impactos. Atualmente, as mudanças climáticas estão resultando em eventos climáticos
+                                extremos, como secas e inundações, que afetam a vida de milhões de pessoas. Reduzir as
+                                emissões de gases de efeito estufa é fundamental para limitar o aquecimento global.
+                            </p><br>
+                            <p>Um aspecto fundamental desse objetivo é a promoção da adaptação climática, onde é crucial
+                                encorajar governos e comunidades a desenvolverem planos de ação efetiva e infraestrutura
+                                resiliente. A conservação de ecossistemas naturais também contribui para a mitigação
+                                climática, uma vez que as florestas, por exemplo, absorvem grandes quantidades de
+                                carbono da atmosfera.
+                            </p><br>
+                            <p>A cooperação internacional desempenha um papel fundamental no enfrentamento contra as
+                                mudanças climáticas. O incentivo de investimento na pesquisa e implementação de
+                                tecnologias sustentáveis e o apoio a países em desenvolvimento para que possam adotar
+                                energias renováveis são passos essenciais para enfrentar a crise climática e construir
+                                um futuro sustentável para todos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-14.svg" alt="ODS 14">
+                        <div class="overlay">
+                            <p>ODS 14</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-14')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-14" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-14')">&times;</span>
+                            <p>O ODS 14 busca conservar e usar de forma sustentável os oceanos, mares e recursos
+                                marinhos. A saúde desses ecossistemas é essencial para a biodiversidade e para o
+                                bem-estar humano, uma vez que muitos indivíduos dependem da pesca e do turismo marinho
+                                para própria subsistência.
+                            </p><br>
+                            <p>A pesca predatória ameaça diversas espécies e prejudicam os ecossistemas marinhos,
+                                evidenciando a importância de incentivar práticas de pesca responsável e regulamentar o
+                                uso dos recursos marinhos são medidas que contribuem para o restabelecimento das
+                                populações das espécies marinhas e para a conservação da biodiversidade.
+                            </p><br>
+                            <p>Promover acordos de conservação e a gestão sustentável de zonas costeiras e marinhas
+                                ajuda é uma prática eficiente para enfrentar desafios como a acidificação dos oceanos e
+                                a perda de habitats, além de que é fundamental a conscientização sobre a importância dos
+                                oceanos para as futuras gerações.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-15.svg" alt="ODS 15">
+                        <div class="overlay">
+                            <p>ODS 15</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-15')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-15" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-15')">&times;</span>
+                            <p>O ODS 15 foca na conservação, restauração e uso sustentável dos ecossistemas terrestres,
+                                incluindo florestas, zonas áridas e montanhas. A degradação dos habitats naturais ameaça
+                                a biodiversidade e aumenta os riscos de extinção de espécies, por isso é fundamental
+                                proteger e restaurar esses ecossistemas para manter o equilíbrio ambiental e a qualidade
+                                de vida humana.
+                            </p><br>
+                            <p>A conservação das florestas é um ponto essencial para atingir esse objetivo, já que elas
+                                não só abrigam grande parte da biodiversidade global, como também desempenham papel
+                                fundamental na regulação do clima e no ciclo da água.
+                            </p><br>
+                            <p>Os ecossistemas terrestres são essenciais para a subsistência de milhões de pessoas,
+                                especialmente em comunidades agrícolas. Desta forma, a gestão sustentável desses
+                                ecossistemas ajuda a evitar a desertificação e a degradação do solo, promovendo um
+                                desenvolvimento agrícola e econômico sustentável. Com isso, o ODS 15 promove um
+                                equilíbrio entre o uso dos recursos naturais e a proteção da biodiversidade.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-16.svg" alt="ODS 16">
+                        <div class="overlay">
+                            <p>ODS 16</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-16')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-16" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-16')">&times;</span>
+                            <p>O Objetivo 16 tem como objetivo promover sociedades pacíficas e inclusivas, assegurar o
+                                acesso à justiça para todos e construir instituições responsáveis e eficazes. A paz e a
+                                justiça são fundamentais para um desenvolvimento sustentável, pois conflitos e
+                                insegurança minam a estabilidade social e dificultam o progresso econômico e social.
+                            </p><br>
+                            <p>Transparência, responsabilidade e combate à corrupção são valores fundamentais para
+                                construir instituições justas que, por sua vez, devem garantir que a justiça seja
+                                acessível e que os direitos humanos sejam respeitados, além de elaborar políticas que
+                                promovam a participação cidadã e a equidade.
+                            </p><br>
+                            <p>Para alcançar esse objetivo, é fundamental estabelecer parceria entre governos, sociedade
+                                civil e organizações internacionais, pois a cooperação global é um passo importante para
+                                promover sociedades mais pacíficas e inclusivas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="image-container">
+                        <img src="./img/ods/ods-17.svg" alt="ODS 17">
+                        <div class="overlay">
+                            <p>ODS 17</p>
+                            <button class="overlay-btn" onclick="openCard('modal-card-17')">Ver Mais</button>
+                        </div>
+                    </div>
+                    <div id="modal-card-17" class="modal-card">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeCard('modal-card-17')">&times;</span>
+                            <p>O ODS 17 destaca a importância de fortalecer as parcerias globais para alcançar o
+                                desenvolvimento sustentável. É essencial que haja colaboração entre países, organizações
+                                internacionais, setor privado e sociedade civil para enfrentar os desafios globais e
+                                atingir os Objetivos de Desenvolvimento Sustentável (ODS).
+                            </p><br>
+                            <p>Para uma implementação eficaz dos ODS em todos os países, é necessário fortalecer os
+                                meios de cooperação e criação de parcerias que incentivem a inovação e a capacitação de
+                                países de baixa renda. A assistência ao desenvolvimento e os investimentos privados
+                                desempenham papel importante nisso.
+                            </p><br>
+                            <p>Além disso, o ODS 17 promove a criação de redes de colaboração para enfrentar problemas
+                                globais como mudanças climáticas e desigualdades, onde o compartilhamento de
+                                conhecimentos e tecnologias são fundamentais para encontrar soluções conjuntas e a
+                                fortalecer a capacidade de adaptação em nível global. Esses esforços conjuntos
+                                impulsionam o desenvolvimento equitativo e criam um caminho para um futuro sustentável
+                                para todos os indivíduos.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div class="footer-box">
+                <h3>Sobre as Nações Unidas</h3>
+                <a href="https://www.un.org/en/about-us">Sobre</a>
+                <a href="https://www.un.org/en/about-us/history-of-the-un">História</a>
+                <a href="#">As Nações Unidas no Brasil</a>
+                <a href="https://brasil.un.org/pt-br/sdgs">As ODS no Brasil</a>
+            </div>
+
+
+
+            <div class="footer-box">
+                <h3>Error 404</h3>
+                <a href="">Emile Cristine</a>
+                <a href="">Ivan Henrique</a>
+                <a href="">Mariana Araripe</a>
+                <a href="">Pedro Santana</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Redes Sociais da ONU</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/nacoesunidas/?brand_redir=54779960819"><i
+                            class='bx bxl-facebook'></i></i></a>
+                    <a href="https://x.com/un"><i class='bx bxl-twitter'></i></i></a>
+                    <a href="https://www.youtube.com/unitednations"><i class='bx bxl-youtube'></i></i></a>
+                    <a href="https://www.instagram.com/unitednations"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+
+            <div class="up">
+                <a href="#"><img src="./img/seta-cinza.png"></a>
+            </div>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
